@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function draw() {
-        const zoom = 1.5;
+        const zoom = 1;
         const xOffSet = 0//balls[0].x || 0;
         const yOffSet = 0//balls[0].y || 0;
         ctx.fillStyle = "black";
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
         balls.forEach(ball => {
             ctx.fillStyle = ball.color;
             ctx.beginPath();
-            ctx.arc((ball.x - xOffSet) * zoom + screenWidth/2, (ball.y - yOffSet) * zoom + screenHeight/2, ball.size*zoom, 0*zoom, (2 * Math.PI)*zoom);
+            ctx.arc((ball.x - xOffSet) * zoom /*+ screenWidth/2*/, (ball.y - yOffSet) * zoom /*+ screenHeight/2*/, ball.size*zoom, 0*zoom, (2 * Math.PI)*zoom);
             ctx.fill();
         });
     }
