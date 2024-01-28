@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Helvetica, sans-serif;
+        }
+        label {
+            color: white;
+        }
+        canvas {
+            display: block; /* Removes the margin around the canvas */
+            background: #f0f0f0; /* Light grey background */
+        }
+        .controls {
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+    <div class="controls">
+        <button id="play">Play/pause</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
